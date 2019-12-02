@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="www.rakeshmandal.com">
+        <!-- <link rel="icon" href="#"> -->
+
+        <title>Employee Joining | CDE Asia HRMS</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/core/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/style/dashboard.css" rel="stylesheet">
+        <!-- datepicker -->
+        <link href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <link href="assets/plugins/select2/css/select2.css" rel="stylesheet">
+        <!-- multiselect -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    </head>
+
+    <body>
+        <!-- Header navbar -->
+        <header class="sticky-top">
+            <nav class="navbar navbar-dark bg-brand flex-md-nowrap p-0">
+                <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">
+                    <img src="assets/images/brand/logo.png" alt="">
+                </a>
+                <input class="form-control form-control-dark w-100" type="text" placeholder="Search"
+                    aria-label="Search">
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link" href="#">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-md-2 d-none d-md-block sidebar">
+                        <div class="sidebar-sticky">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="home"></span>
+                                        Dashboard <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="employee-joining.html">
+                                        <span data-feather="user-plus"></span>
+                                        Employee Joining
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- <h6
+                                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                <span>Saved reports</span>
+                                <a class="d-flex align-items-center text-muted" href="#">
+                                    <span data-feather="plus-circle"></span>
+                                </a>
+                            </h6> -->
+                            <!-- <ul class="nav flex-column mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Current month
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Last quarter
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Social engagement
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Year-end sale
+                                    </a>
+                                </li>
+                            </ul> -->
+
+                        </div>
+                    </nav>
+
+                    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                        <!-- Page/module tite -->
+                        <div
+                            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Employee Joining</h1>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body lots-of-form">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="applicationBlank-tab" data-toggle="tab"
+                                        href="#applicationBlank" role="tab" aria-controls="applicationBlank"
+                                        aria-selected="true">Application Blank</a>
+
+                                    <a class="nav-item nav-link" id="codeOfConduct-tab" data-toggle="tab"
+                                        href="#codeOfConduct" role="tab" aria-controls="codeOfConduct"
+                                        aria-selected="false">Code of Conduct</a>
+
+                                    <a class="nav-item nav-link" id="ITPolicy-tab" data-toggle="tab" href="#ITPolicy"
+                                        role="tab" aria-controls="ITPolicy" aria-selected="false">IT policy</a>
+
+                                    <a class="nav-item nav-link" id="SIM_Declaration-tab" data-toggle="tab"
+                                        href="#SIM_Declaration" role="tab" aria-controls="SIM_Declaration"
+                                        aria-selected="false">SIM Declaration</a>
+
+                                    <a class="nav-item nav-link" id="PF_family_details-tab" data-toggle="tab"
+                                        href="#PF_family_details" role="tab" aria-controls="PF_family_details"
+                                        aria-selected="false">PF & family details</a>
+
+                                    <a class="nav-item nav-link" id="gratuity_form-tab" data-toggle="tab"
+                                        href="#gratuity_form" role="tab" aria-controls="gratuity_form"
+                                        aria-selected="false">Gratuity Form</a>
+
+                                    <a class="nav-item nav-link" id="health_insurance-tab" data-toggle="tab"
+                                        href="#health_insurance" role="tab" aria-controls="health_insurance"
+                                        aria-selected="false">Health Insurance</a>
+
+                                    <a class="nav-item nav-link" id="saftey-tab" data-toggle="tab" href="#saftey" role="tab" aria-controls="saftey" aria-selected="false">Safety</a>
+                                </div>
+
+                                <div class="tab-content" id="nav-tabContent">
+
+                                    <!-- Application Blank -->
+                                    <div class="tab-pane fade show active" id="applicationBlank" role="tabpanel"
+                                        aria-labelledby="applicationBlank-tab">
+                                        <div class="card-body">
+                                            <!-- instruction -->
+                                            <form action="">
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-12 ">
+                                                        <h6>Instructions :</h6>
+                                                    </div>
+                                                    <div class="col-md-12 ">
+                                                        <ul class="instruction_ul">
+                                                            <li>The applicant is requested to go
+                                                                through the following pages and fill
+                                                                in the required details. State N.A.,
+                                                                wherever required detail is not
+                                                                applicable.</li>
+                                                            <li>
+                                                                Do not fill in the shaded portions of this form
+                                                            </li>
+                                                            <li>
+                                                                Please paste your latest color passport size photo here.
+                                                            </li>
+                                                            <li>
+                                                                Please fill in month & year where
+                                                                MM /YY is provided.
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="customer">Position
+                                                                applied for :</label>
+                                                            <select class="form-control" data-toggle="select">
+                                                                <option>--Select issued place--</option>
+                                                                <option>Developer</option>
+                                                                <option>Hr</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Name:</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Date of Birth</label>
+                                                            <input type="text" class="datepicker form-control"
+                                                                id="date-of-birth" placeholder="Date of birth">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label d-block" for="date-of-birth">Sex</label>
+                                                            <div
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="male" name="sex" class="custom-control-input">
+                                                                <label class="custom-control-label" for="male">Male</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="fermale" name="sex"  class="custom-control-input">
+                                                                <label class="custom-control-label" for="fermale">Female</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Place
+                                                                Of
+                                                                birth</label>
+                                                            <select class="form-control" data-toggle="select">
+                                                                <option>--Select birth place</option>
+                                                                <option>Kolkata</option>
+                                                                <option>Howrah</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label d-block"
+                                                                for="date-of-birth">Marital status</label>
+                                                            <div
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="single" name="martial"
+                                                                    class="custom-control-input">
+                                                                <label class="custom-control-label"
+                                                                    for="single">Single</label>
+                                                            </div>
+                                                            <div
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="married" name="martial"
+                                                                    class="custom-control-input">
+                                                                <label class="custom-control-label"
+                                                                    for="married">Married</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label"
+                                                                for="date-of-birth">Wedding Date(*if married)
+                                                                :</label>
+                                                            <input type="text" class="datepicker form-control" id=""
+                                                                placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label"
+                                                                for="date-of-birth">Preferred
+                                                                Work Location :
+                                                            </label>
+                                                            <select class="form-control" data-toggle="select">
+                                                                <option>--Select Preferred work location</option>
+                                                                <option>Kolkata</option>
+                                                                <option>Howrah</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label d-block"
+                                                                for="date-of-birth">Guardian</label>
+                                                            <div
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="father" name="guardian"
+                                                                    class="custom-control-input">
+                                                                <label class="custom-control-label"
+                                                                    for="father">Father</label>
+                                                            </div>
+                                                            <div
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="husband" name="guardian"
+                                                                    class="custom-control-input">
+                                                                <label class="custom-control-label"
+                                                                    for="husband">Husband</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr"> Guardian's Name:</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr"> Guardian's Occupation:</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="comment">Address:</label>
+                                                            <textarea class="form-control" rows="1"
+                                                                id="adress"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Contact Number:</label>
+                                                            <input type="tel" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Contact Number:</label>
+                                                            <input type="tel" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Years of Stay in present Address </label>
+                                                            <input type="number" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">E-Mail</label>
+                                                            <input type="email" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="customer">Blood Group:</label>
+                                                            <select class="form-control" data-toggle="select">
+                                                                <option>--Select blood group</option>
+                                                                <option>O</option>
+                                                                <option>0+</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Mother Tongue :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+
+                                                        <label for="usr">Language Known :</label>
+                                                        <select class="select2_enabled" name="Language[]"
+                                                            multiple="multiple">
+                                                            <option value="AL">Bengali</option>
+
+                                                            <option value="WY">Tamil</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <!-- ``end -->
+                                                    <div class="col-md-12 ">
+                                                        <h6>Passport Details</h6>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr"> Passport No :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr"> Place of Issue :</label>
+                                                            <select class="form-control" data-toggle="select">
+                                                                <option>--Select issued place--</option>
+                                                                <option>Developer</option>
+                                                                <option>Hr</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Date
+                                                                of
+                                                                Issue</label>
+                                                            <input type="text" class="datepicker form-control"
+                                                                id="date-of-birth" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Valid
+                                                                till
+                                                                :</label>
+                                                            <input type="text" class="datepicker form-control"
+                                                                id="date-of-birth" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+
+                                                    <!-- end -->
+                                                    <div class="col-md-12 ">
+                                                        <h6>Emergency Contact Details</h6>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr"> Name :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="comment">Address:</label>
+                                                            <textarea class="form-control" rows="1"
+                                                                id="adress"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="usr">Contact Number:</label>
+                                                            <input type="tel" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-12 ">
+                                                        <h6>Highest Academic & Proffesional degree record</h6>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="qulaification_wraper">
+
+                                                            <div class="row no-gutters ">
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">From</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control datepicker " id="usr"
+                                                                            placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">To</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control datepicker " id="usr"
+                                                                            placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="form-group">
+                                                                        <label for="">Degree / Diploma completed
+                                                                        </label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">College/University</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Subjects</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <div class="form-group">
+                                                                        <label for="">%Marks / Grade</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col">
+                                                                    <a class="btn btn-primary mt-4 add_button"
+                                                                        href="javascript:void(0);">
+                                                                        +
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5 ">
+                                                        <div class="form-group">
+                                                            <label for="usr">Any other technical
+                                                                qualification/certificates :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 ">
+                                                        <label for="usr">Upload:</label>
+                                                        <div class="custom-file">
+
+                                                            <input type="file" class="custom-file-input"
+                                                                id="customFile">
+                                                            <label class="custom-file-label" for="customFile">Choose
+                                                                file</label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-12 ">
+                                                        <h6> Work experience record </h6>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="expericence">
+
+                                                            <div class="row no-gutters">
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">From</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class=" datepicker form-control" id="usr"
+                                                                            placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <div class="form-group">
+                                                                        <label for="">To</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="datepicker  form-control" id="usr"
+                                                                            placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <div class="form-group">
+                                                                        <label for="">Orginazation deatils</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Role Title</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Basic Nature of Duties</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <div class="form-group">
+                                                                        <label for="">Salary on Joining </label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <div class="form-group">
+                                                                        <label for="">Leaving</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-1">
+                                                                    <a class="btn btn-primary mt-4 add_button2"
+                                                                        href="javascript:void(0);">
+                                                                        +
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 ">
+                                                        <div class="form-group">
+                                                            <label for="usr">Total Experience :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-12 ">
+                                                        <h6> Salary in present employement </h6>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Last
+                                                                Revised On :
+                                                            </label>
+                                                            <input type="text" class="datepicker form-control" id="date-of-birth" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Next
+                                                                Revision Due On :
+                                                            </label>
+                                                            <input type="text" class="datepicker form-control"
+                                                                id="date-of-birth" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Gross Salary ( Monthly ) :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Gross Salary ( Annual ) :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Joining Time Required :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">What is your Minimum Expected Salary?:
+                                                            </label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="usr">Gross Monthly Rs.
+                                                                :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Gross Annual Rs.
+                                                                (in days)
+                                                                :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-12 ">
+                                                        <h6> References : </h6>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="reference">
+
+                                                            <div class="row no-gutters">
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Full Name</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Full Address</label>
+                                                                        <textarea name="field_name[]"
+                                                                            class="form-control" rows="1"
+                                                                            id="adress"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Tel. No</label>
+                                                                        <input name="field_name[]" type="text" class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Business or Occupation</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-1">
+                                                                    <a class="btn btn-primary mt-4 add_button3"
+                                                                        href="javascript:void(0);">
+                                                                        +
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-12">
+                                                        <p class="statement">
+                                                            Have you ever been arrested indicted or summoned as a
+                                                            defendant in a criminal proceeding or convicted, fined
+                                                            or, imprisoned for the violation of any law (Excluding
+                                                            minor traffic violations)
+                                                        </p>
+                                                        <div class="form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="optradio">yes
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="optradio">No
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-12">
+                                                        <p class="statement">
+                                                            I certify that the statements made by me are true, complete
+                                                            and
+                                                            correct to the best of my knowledge and belief. I understand
+                                                            that any material misrepresentation or, omission made here
+                                                            on
+                                                            or any other document requested by CDE ASIA, renders me
+                                                            liable to termination or, dismissal.
+                                                        </p>
+                                                    </div>
+                                                    <!-- end -->
+
+                                                </div><!-- /mainrow -->
+                                                <div class="row ">
+                                                    <div class="col-md-6">
+                                                        <div class="mt-3">
+                                                            <button type="button" class="btn btn-primary">Save As
+                                                                Draft</button>
+                                                            <button type="button" class="btn btn-danger">Cancel</button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Code of conduct -->
+                                    <div class="tab-pane fade" id="codeOfConduct" role="tabpanel"
+                                        aria-labelledby="codeOfConduct-tab">...</div>
+
+                                    <!-- IT Policy -->
+                                    <div class="tab-pane fade" id="ITPolicy" role="tabpanel"
+                                        aria-labelledby="ITPolicy-tab">
+                                    </div>
+
+                                    <!-- Sim Declaration -->
+                                    <div class="tab-pane fade" id="SIM_Declaration" role="tabpanel"
+                                        aria-labelledby="SIM_Declaration-tab">...</div>
+
+                                    <!-- PF family details -->
+                                    <div class="tab-pane fade" id="PF_family_details" role="tabpanel"
+                                        aria-labelledby="PF_family_details-tab">
+                                    
+                                    
+                                    </div>
+
+                                    <!-- Gratuity Form -->
+                                    <div class="tab-pane fade" id="gratuity_form" role="tabpanel"
+                                        aria-labelledby="gratuity_form-tab">
+                                        <form action="">
+                                            <div class="row no-gutters">
+                                                <!-- Nomination -->
+                                                <div class="col-md-12">
+                                                    <h6>Nomination</h6>
+                                                </div>
+    
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="usr">To</label>
+                                                        <input type="text" class="form-control" value="CDE Asia Ltd." readonly>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Select gender</label>
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">Shri</option>
+                                                            <option value="">Smt.</option>
+                                                            <option value="">Kumari</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="usr">Name</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-md-12 mt-2">
+                                                    <p>
+                                                        whose particulars are given in the statement below, hereby nominate the person(s) mentioned
+                                                        below to receive the gratuity payable after my death as also the gratuity standing to my credit in
+                                                        the event of my death before that amount has become payable or having become payable has not
+                                                        been paid and direct that the said amount of gratuity shall be paid in proportion indicated against
+                                                        the name(s) of the nominee(s). 
+                                                    </p>
+                                                </div>
+    
+                                                <div class="col-md-12">
+                                                    <ul class="instruction_ul">
+                                                        <li>I hereby certify that the person(s) nominated is a/are member(s) of my family within themeaning of clause (h) of section (2) of the Payment of Gratuity Act, 1972.</li>
+                                                        <li>I hereby declare that I have no family within the meaning of clause (h) of section (2) of the said Act</li>
+                                                        <li>(a) My father/mother/parents is/are not dependent on me. </li>
+                                                        <li>(b) My husband’s father/mother/parents is/are not dependent on my husband. </li>
+                                                        <li>I have excluded my husband from my family by a notice dated the <input type="text" class="input-inside-text datepicker col-2"> to the controlling authority in terms of the provision to clause (h) of section 2 of the said Act. </li>
+                                                        <li>Nomination made herein invalidates my previous nomination.</li>
+                                                    </ul>
+                                                </div>
+    
+                                                <!-- ---------------------- -->
+                                                <div class="col-md-12"><h6>Nominee(s)</h6></div>
+    
+                                                <div class="col-md-12">
+                                                    <div class="nomineeWrapper">
+                                                        <div class="row no-gutters">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="">Name</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="">Address</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="">Relation</label>
+                                                                    <select name="" id="" class="form-control">
+                                                                        <option value="">Relation 1</option>
+                                                                        <option value="">Relation 2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="">Age</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="">Porportion</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-1">
+                                                                <div class="form-group mt-4">
+                                                                    <a href="javascript:void(0);" class="btn btn-primary addNominee">+</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <!-- --------------------- -->
+                                                <div class="col-md-12"><h6>Statement</h6></div>
+                                                
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Employee Name</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <label for="">Sex</label>
+                                                    <select class="form-control">
+                                                        <option value="">Male</option>
+                                                        <option value="">Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Religion</label>
+                                                        <select class="form-control">
+                                                            <option value="">Rel 1</option>
+                                                            <option value="">Rel 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Maritial Status</label>
+                                                        <select class="form-control">
+                                                            <option value="">Satatus 1</option>
+                                                            <option value="">Satatus 2</option>
+                                                            <option value="">Satatus 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Department</label>
+                                                        <select class="form-control">
+                                                            <option value="">Department 1</option>
+                                                            <option value="">Department 2</option>
+                                                            <option value="">Department 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="usr">Post held with ticket no.</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Date of appointment</label>
+                                                        <input type="text" class="form-control datepicker">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Permanent address</label>
+                                                        <textarea type="text" class="form-control" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Village</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Thana</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Sub-division</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Post office</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">State</label>
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">Dist</label>
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="usr">PIN</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+    
+                                                <!-- --------------------- -->
+                                                <div class="col-md-12"><h6>Decleartion by Witnesses</h6></div>
+    
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="witnessWrapper">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-4">
+                                                                        <div class="form-group">
+                                                                            <label for="">Name</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <div class="form-group">
+                                                                            <label for="">Address</label>
+                                                                            <textarea class="form-control" rows="1"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-1">
+                                                                        <a href="javascript:void(0);" class="btn btn-primary addWitness mt-4">+</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="col-md-12">
+                                                                <h6></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div> <!-- /row -->
+    
+                                        </form>
+                                    </div>
+
+                                    <!-- Health Insurance -->
+                                    <div class="tab-pane fade" id="health_insurance" role="tabpanel"
+                                        aria-labelledby="health_insurance-tab">
+
+                                        <div class="card-body">
+                                            <form action="">
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Name:</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="comment">Present Addsres:</label>
+                                                            <textarea class="form-control" rows="1"
+                                                                id="comment"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="comment">Permanent Address:</label>
+                                                            <textarea class="form-control" rows="1"
+                                                                id="comment"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Contact Number:</label>
+                                                            <input type="tel" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label" for="date-of-birth">Date
+                                                                of
+                                                                Birth</label>
+                                                            <input type="text" class="datepicker form-control"
+                                                                id="date-of-birth" placeholder="Date of birth">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Designation:</label>
+                                                        <select class="form-control" data-toggle="select">
+                                                            <option>--Select Designation--</option>
+                                                            <option>Developer</option>
+                                                            <option>Hr</option>
+
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- end -->
+                                                    <div class="col-md-12">
+                                                        <div class="insurance">
+                                                            <div class="row no-gutters">
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Insured person name</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Date of birth</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class=" form-control datepicker" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <label for="">Relation</label>
+                                                                        <input name="field_name[]" type="text"
+                                                                            class="form-control" id="usr">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a class="btn btn-primary mt-4 add_button4"
+                                                                        href="javascript:void(0);">
+                                                                        +
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- end -->
+                                                    <div class="col-md-4 ">
+                                                        <label for="usr">Upload Photo:</label>
+                                                        <div class="custom-file">
+
+                                                            <input type="file" class="custom-file-input"
+                                                                id="customFile">
+                                                            <label class="custom-file-label" for="customFile">Choose
+                                                                file</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 ">
+                                                        <h6> For Office Use Only : </h6>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Limit :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">New Policy Number :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Next Renew :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="usr">Premium Amount :</label>
+                                                            <input type="text" class="form-control" id="usr">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- main row -->
+                                            </form>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Safety -->
+                                    <div class="tab-pane fade" id="saftey" role="tabpanel" aria-labelledby="saftey-tab">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </main>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/vendor/jquery-3.3.1.min.js">
+        </script>
+        <script src="assets/vendor/popper.min.js"></script>
+        <script src="assets/core/bootstrap.js"></script>
+        <!-- datepicker -->
+        <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <!-- select2 -->
+        <script src="assets/plugins/select2/js/select2.full.js"></script>
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <!-- multiselect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js">
+        </script>
+        <!--  -->
+        <script src="assets/script/dynamicfield.js"></script>
+        <!-- Init js -->
+        <script src="assets/script/dashboard.js"></script>
+    </body>
+
+</html>
