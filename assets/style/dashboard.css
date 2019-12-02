@@ -445,4 +445,5 @@ label {
   .embeed_doc {
     height: 400px;
     width: 100%;
+    border: 3px solid rgba(61, 34, 126, 0.48);
   }
