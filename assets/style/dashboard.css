@@ -503,3 +503,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .login .img-wrap img {
   height: 200px;
 }
+/* tag */
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+  background: #6342b1;
+}

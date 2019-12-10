@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="www.rakeshmandal.com">
+        <!-- <link rel="icon" href="#"> -->
+
+        <title>Manpower Requisition | CDE Asia HRMS</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/core/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/style/dashboard.css" rel="stylesheet">
+        <!-- datepicker -->
+        <link href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <link href="assets/plugins/select2/css/select2.css" rel="stylesheet">
+        <!-- multiselect -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+        <link rel="stylesheet" href="assets/plugins/tags-input/bootstrap-tagsinput.css">
+    </head>
+
+    <body>
+        <!-- Header navbar -->
+        <header class="sticky-top">
+            <nav class="navbar navbar-dark bg-brand flex-md-nowrap p-0">
+                <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">
+                    <img src="assets/images/brand/logo.png" alt="">
+                </a>
+                <input class="form-control form-control-dark w-100" type="text" placeholder="Search"
+                    aria-label="Search">
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link" href="#">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-md-2 d-none d-md-block sidebar">
+                        <div class="sidebar-sticky">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="home"></span>
+                                        Dashboard <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="employee-joining.html">
+                                        <span data-feather="disc"></span>
+                                        Employee Joining
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link active" href="manpower-requsition.html">
+                                            <span data-feather="disc"></span>
+                                            Manpower Requisition
+                                        </a>
+                                    </li>
+                            </ul>
+
+                            <!-- <h6
+                                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                <span>Saved reports</span>
+                                <a class="d-flex align-items-center text-muted" href="#">
+                                    <span data-feather="plus-circle"></span>
+                                </a>
+                            </h6> -->
+                            <!-- <ul class="nav flex-column mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Current month
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Last quarter
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Social engagement
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file-text"></span>
+                                        Year-end sale
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </nav>
+
+                    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                        <!-- Page/module tite -->
+                        <div
+                            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                            <h1 class="h2"> Manpower Requisition</h1>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                            <div class="form-group">
+                                                    <label class="form-control-label" for="date-of-birth">Next
+                                                            Date Of Request :
+                                                    </label>
+                                                    <input type="text" class="datepicker form-control" id="date-of-birth" placeholder="">
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="form-group">
+                                                    <label class="form-control-label" for="date-of-birth">Next
+                                                            Required By (DATE ) :
+                                                    </label>
+                                                    <input type="text" class="datepicker form-control" id="date-of-birth" placeholder="">
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="form-group">
+                                                    <label for="usr"> Department :</label>
+                                                    <select class="form-control" data-toggle="select">
+                                                        <option>--Select Department--</option>
+                                                        <option>Developer</option>
+                                                        <option>Hr</option>
+                                                    </select>
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="form-group">
+                                                    <label for="usr"> Requisition Raised By :</label>
+                                                    <input type="text" class="form-control" id="usr">
+                                                </div>
+                                    </div>
+                                </div>
+                                <!-- row -->
+                                <div class="row no-gutters">
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Reason For Hire :</label>
+                                                        <select class="form-control" data-toggle="select">
+                                                            <option>--Select Reason--</option>
+                                                            <option>NEW REQUIREMENT</option>
+                                                            <option>REPLACEMENT</option>
+                                                            <option>BACKUP</option>
+                                                        </select>
+                                                    </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> NOS Required :</label>
+                                                        <input type="number" class="form-control" id="usr">
+                                                    </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Type Of Employment :</label>
+                                                        <select class="form-control" data-toggle="select">
+                                                            <option>--Select Employment Type--</option>
+                                                            <option>REGULAR</option>
+                                                            <option>TEMPORARY</option>
+                                                            <option>CONTRACTUAL</option>
+                                                            <option>SUMMER TRAINEE</option>
+                                                           
+                                                        </select>
+                                                    </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Position :</label>
+                                                        <select class="form-control" data-toggle="select">
+                                                            <option>--Select Position--</option>
+                                                            <option>Junior</option>
+                                                            <option>Senior</option>
+                                                        </select>
+                                                    </div>
+                                        </div>
+                                </div>
+                                <!-- row -->
+                                <div class="row no-gutters">
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Reports To :</label>
+                                                        <input type="text" class="form-control" id="usr">
+                                                    </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Location :</label>
+                                                        <select class="form-control" data-toggle="select">
+                                                            <option>--Select Location--</option>
+                                                            <option>Mumbai</option>
+                                                            <option>Delhi</option>
+                                                        </select>
+                                                    </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="comment">KRAs (use Additional Sheets if required):</label>
+                                                        <textarea class="form-control" rows="1" id="comment"></textarea>
+                                                      </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Job Specification :</label>
+                                                        <input type="text" class="form-control" id="usr">
+                                                    </div>
+                                        </div>
+                                </div>
+                               <div class="row no-gutters">
+                                    <div class="col">
+                                            <div class="form-group">
+                                                    <label for="usr"> Years Of Experiense :</label>
+                                                    <select class="form-control" data-toggle="select">
+                                                        <option>--Select Experiense--</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="form-group">
+                                                    <label for="usr"> Qualification :</label>
+                                                    
+                                                    <input type="number" class="form-control" id="usr">
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="form-group">
+                                            <label for=""> Specific Skill Requiremnet :</label>
+                                            <br>
+                                        <input type="text" class="form-control" data-role="tagsinput">
+                                        </div>
+                                    </div>
+
+                               </div>
+                               <!-- /row -->
+                               <div class="row no-gutters">
+                                <div class="col">
+                                        <div class="form-group">
+                                                <label for="usr"> Any Industry Specific Requiremnet :</label>
+                                                
+                                                <input type="number" class="form-control" id="usr">
+                                            </div>
+                                </div>
+                                <div class="col">
+                                        <div class="col">
+                                                <div class="form-group">
+                                                        <label for="usr"> Indicative Salary Range ( To be Filled by HR )  :</label>
+                                                        <select class="form-control" data-toggle="select">
+                                                            <option>--Select Range--</option>
+                                                            <option>10,0000-15,000</option>
+                                                            <option>16,000-20,000</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                        </div>
+                                      
+                                </div>
+                                <div class="col">
+                                        <div class="form-group">
+                                                <label for="usr"> Approved By  :</label>
+                                                <select class="form-control" data-toggle="select">
+                                                    <option>--Approved By--</option>
+                                                    <option>HOD</option>
+                                                    <option>Vice President(Corporate Services)</option>
+                                                    <option>COO,ED</option>
+                                                    <option>MD</option>
+                                                </select>
+                                            </div>
+                                </div>
+                               </div>
+                               <!-- row -->
+                               <div class="row">
+                                    <div class="col-md-12">
+                                            <div class="mt-3">
+                                                <button type="button" class="btn btn-danger">Reset</button>
+                                                <button type="button" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col mt-4">
+                                       <p class="text-muted small">NOTE: TAT ( Turn Around Time for closure of position is 15 –20 days .In case of any deviation, approval required from VP -
+                                            Corporate Services, ED, ).  MRF can be raised by the Activity Head . Approval required by the HOD ,VP - Corporate Services,
+                                            ED  MD for HR to take action.</p>
+                                   </div>
+                               </div>
+                                
+                                
+                               
+                            </div>
+                        </div>
+
+                    </main>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/vendor/jquery-3.3.1.min.js">
+        </script>
+        <script src="assets/vendor/popper.min.js"></script>
+        <script src="assets/core/bootstrap.js"></script>
+        <!-- datepicker -->
+        <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <!-- select2 -->
+        <script src="assets/plugins/select2/js/select2.full.js"></script>
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <!-- multiselect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js">
+        </script>
+        <script src="assets/plugins/tags-input/bootstrap-tagsinput.js"></script>
+        <!--  -->
+        <script src="assets/script/dynamicfield.js"></script>
+        <!-- Init js -->
+        <script src="assets/script/dashboard.js"></script>
+    </body>
+
+</html>
